@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(180deg, #E3FFF8 0%, #CBF1E3 100%);
+  min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+}
+
+.page {
+  height: 100vh;
+  padding: 64px 80px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 16px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  background: #4ECBBD;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  gap: 40px;
+}
+
+.text {
+  max-width: 600px;
+}
+
+.text h1 {
+  font-family: 'Mulish', sans-serif;
+  font-size: 44px;
+  line-height: 56px;
+  margin-bottom: 24px;
+}
+
+.text h1 span {
+  color: #4ECBBD;
+}
+
+.text p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 24px;
+}
+
+.text button {
+  background: #4ECBBD;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s;
+}
+
+.text button:hover {
+  background: #3bb5a0;
+  transform: scale(1.05);
+}
+
+.hero-image {
+  width: 400px;
+  max-width: 100%;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 16px;
+  color: #444;
+}
+
+footer a {
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+/* Animation styles */
+.slide-in {
+  animation: slideIn 1.2s ease-out forwards;
+  opacity: 0;
+}
+
+.float-in {
+  animation: floatIn 1.4s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes floatIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
