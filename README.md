@@ -1,8 +1,5 @@
 # UTS Web Client Development 2025
 
-![GitHub repo size](https://img.shields.io/github/repo-size/rangga-pras/UTS_WebClientDev)
-![GitHub last commit](https://img.shields.io/github/last-commit/rangga-pras/UTS_WebClientDev)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Made with](https://img.shields.io/badge/Made%20with-React%2C%20TypeScript%2C%20Vite%2C%20Tailwind-blue?logo=react)
 
 Repositori ini merupakan dokumentasi lengkap hasil pengerjaan **Ujian Tengah Semester (UTS)** mata kuliah **Web Client Development** tahun 2025. Tugas terdiri dari 6 soal proyek yang menuntut penerapan teknologi modern frontend serta praktik pengembangan web yang baik.
